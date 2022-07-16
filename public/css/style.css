@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    padding: 0 0.5em;
+}
+nav{
+    background-color: #f8f8f8;
+    padding: 2em 0;
+}
+h1{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #143774;
+}
+nav p{
+    font-size: 0.75rem;
+    color: #1792D2;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 1.5em 0;
+}
+nav li{
+    margin-left: 2em;
+}
+nav li a{
+    color: #707070;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 2px 0;
+}
+nav li a:hover,
+nav li a:focus{
+    color: #1792D2;
+}
+.current-page{
+    border-bottom: 2px solid #707070;
+}
+.current-page:hover{
+    color: #707070;
+}
+
+/* Main section */
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+.col-1{
+    width: 67%;
+}
+.col-2{
+    width: 30%;
+}
+.col-main{
+    width: 100%;
+    color: #707070;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.div-end{
+    color: #1792D2;
+    font-size: 0.875rem;
+    padding: 1em 0;
+    font-weight: 700;
+}
+.date,
+.about-me{
+    color: #707070;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 1em 0;
+}
+.about-me p{
+    padding: 0.5em 0;
+}
+.about-me img{
+    height: 30em;
+    object-fit: cover;
+    object-position: 100% 30%;
+}
+.about-me span{
+    color: #1792D2;
+    font-weight: bolder;
+}
+#main img{
+    width: 100%;
+}
+h2{
+    font-size: 1.5rem;
+    color: #143774;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    padding: 0.5em 0;
+}
+
+.post{
+    display: flex;
+    justify-content: space-between;
+}
+.post-img{
+    width: 26%;
+    padding: 1em 0;
+}
+.post-img img{
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+}
+.description{
+    width: 72%;
+}
+
+/* left side */
+.side-post{
+    background-color: #efefef;
+    padding: 1.2em;
+    width: 100%;
+}
+.content{
+    width: 100%;
+    background-color: #fff;
+    color: #707070;
+    font-size: 0.8rem;
+    padding: 2em;
+}
+.content img{
+    width: 100%;
+    
+    margin: 1em auto;
+}
+h3{
+    color: #143774;
+    font-size: 1.5rem;
+}
+.post-2{
+    margin: 1em 0;
+}
+.post-2 img{
+    height: 8em;
+    object-fit: cover;
+}
+.content p{
+    padding: 1em 0;
+}
+footer{
+    height: 5rem;
+    background-color: #143774;
+    padding: 1.5rem 0;  
+}
+.footer-content{
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+
+}
+h6{
+    font-size: smaller;
+    font-weight: 400;
+}
+footer p{
+    font-size: x-small;
+    padding: 0.5em;
+}
+
+@media(max-width: 840px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        text-align: center;
+    }
+    ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    li{
+        margin: 1em 0;
+    }
+    nav li{
+        margin-left: 0;
+    }
+    #main{
+        padding-bottom: 1em;
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
+    }
+    .post-2 img{
+        height: 20em;
+        object-fit: cover;
+    }
+    .post{
+        flex-direction: column;
+    }
+    .post-img{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .post-img img{
+        width: 100%;
+        height: 20em;
+        object-fit: cover;
+    }
+    .description{
+        width: 100%;
+        padding-bottom: 0;
+        text-align: left;
+    }
+    .date{
+        padding-bottom: 0;
+        text-align: left;
+    }
+    .div-end{
+        padding-bottom: 0;
+    }
+}
